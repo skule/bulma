@@ -89,14 +89,10 @@ $alignments: ('centered': 'center', 'left': 'left', 'right': 'right')
 @each $name, $pair in $colors
   $color: nth($pair, 1)
   .has-text-#{$name}
-<<<<<<< HEAD
     @if $name == warning
-      color: darken($color, 35%)
+      color: darken($color, 35%) !important
     @else
-      color: $color
-=======
-    color: $color !important
->>>>>>> origin/master
+      color: $color !important
   a.has-text-#{$name}
     &:hover,
     &:focus
